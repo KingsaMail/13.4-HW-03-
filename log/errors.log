@@ -1,0 +1,16 @@
+2024.06.27 19:34:30 ERROR {Internal Server Error: /index_2} C:\work\python\s_f\FPW\D\venv\Lib\site-packages\django\utils\log.py [(<class 'ZeroDivisionError'>, ZeroDivisionError('division by zero'), <traceback object at 0x0000025AA8A3D600>)]
+Traceback (most recent call last):
+  File "C:\work\python\s_f\FPW\D\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\work\python\s_f\FPW\D\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\work\python\s_f\FPW\D\d13\logging_d13\views.py", line 21, in index_2
+    itog = number_1/number_2
+           ~~~~~~~~^~~~~~~~~
+ZeroDivisionError: division by zero
+2024.06.27 19:34:30 ERROR {"POST /index_2 HTTP/1.1" 500 72133} C:\work\python\s_f\FPW\D\venv\Lib\site-packages\django\core\servers\basehttp.py [None]
+2024.06.27 19:49:33 ERROR "POST /index_2 HTTP/1.1" 500 59 C:\work\python\s_f\FPW\D\venv\Lib\site-packages\django\core\servers\basehttp.py None
+2024.06.27 19:51:47 ERROR "POST /index_2 HTTP/1.1" 500 59 C:\work\python\s_f\FPW\D\venv\Lib\site-packages\django\core\servers\basehttp.py None
+2024.06.27 19:53:25 ERROR "POST /index_2 HTTP/1.1" 500 59 C:\work\python\s_f\FPW\D\venv\Lib\site-packages\django\core\servers\basehttp.py None

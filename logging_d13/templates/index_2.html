@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>И тут что-то тоже выводим.</p>
+    <a href="{% url 'index' %}">Возврвт на первую страницу.</a>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="input" />
+    </form>
+    <p>Number_1 - {{ number_1 }}</p>
+    <p>Number_2 - {{ number_2 }}</p>
+    {% if number_1 %}
+      <p>{{ number_1 }} / {{ number_2 }} = {{ itog }}</p>
+    {% else %}
+      <p>Number_1 / Number_2 = {{ itog }}</p>
+    {% endif %}
+    <p>{{ request }}</p>
+</body>
+</html>
